@@ -1,0 +1,30 @@
+Appium is open source and free to download software which developed using selenium as Base to automate
+Mobile Base Applications(client-server architecture) on android ,ios and windows platform.
+
+appium dependencies
+node.js
+jdk 1.8
+testng
+selenium webdriver
+xcuitest
+xcode
+
+appium locators strategies
+
+for ios
+id or accessibilityID
+xpath
+predicate-string
+class-string
+class-chain
+classname
+label
+
+
+for android
+id
+xpath
+classname
+label
+
+

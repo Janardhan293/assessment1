@@ -1,0 +1,2 @@
+'/' absolute xpath - navigate from parent webelement to its immediate child webelement
+'//'relative xpath - navigates from parent webelement to any child webelement

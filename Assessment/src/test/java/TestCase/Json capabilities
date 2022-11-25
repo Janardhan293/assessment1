@@ -1,0 +1,9 @@
+json required capabilities{
+
+  "platformName": ,
+  "appPath":,
+  "deviceName": ,
+  "platformVersion": ,
+  "uid":,
+}
+
