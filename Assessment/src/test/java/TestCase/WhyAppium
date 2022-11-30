@@ -15,11 +15,9 @@ for ios
 id or accessibilityID
 xpath
 predicate-string
-class-string
 class-chain
 classname
 label
-
 
 for android
 id

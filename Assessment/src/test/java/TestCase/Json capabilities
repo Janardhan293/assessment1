@@ -1,9 +1,9 @@
-json required capabilities{
-
-  "platformName": ,
-  "appPath":,
-  "deviceName": ,
-  "platformVersion": ,
-  "uid":,
+json required capabilities
+{
+  "platformName": "name of the os",
+  "appPath": "path of the application to be automated",
+  "deviceName": "simulator name",
+  "platformVersion": "simulator version",
+  "uid": "unique id",
 }
 

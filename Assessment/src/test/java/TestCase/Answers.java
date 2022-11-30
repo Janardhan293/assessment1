@@ -1,32 +1,38 @@
 package TestCase;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Utilities.Common_Functions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import ObjectRepo.*;
-
-import java.io.File;
 import java.io.IOException;
-
-public class Answers {
+public class Answers extends Common_Functions{
     WebDriver driver = null;
     Locators locators = null;
-
     @BeforeClass
     public void launchBrowser() throws IOException {
-
-
+        driver = browserLaunch2();
+        locators = new Locators(driver);
     }
-
     @Test
-            public void Locators()
-    {
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.youtube.com/");
+    public void Locators() throws InterruptedException {
+    click(locators.getClassName());
+    Thread.sleep(2000);
+   click(locators.getXpath());
+        Thread.sleep(2000);
+    click(locators.getName());
+        Thread.sleep(2000);
+        driver.navigate().back();
+    click(locators.getId());
+        Thread.sleep(2000);
+    click(locators.getLinktext());
+        Thread.sleep(2000);
+    click(locators.getTagName());
+        Thread.sleep(2000);
+    click(locators.getParalinktext());
+        Thread.sleep(2000);
+    driver.navigate().back();
+        Thread.sleep(2000);
+    click(locators.getCss());
+        Thread.sleep(2000);
     }
-
-
-
 }
